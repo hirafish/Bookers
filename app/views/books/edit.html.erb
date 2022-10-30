@@ -9,6 +9,20 @@
 <body class="edit_body">
   
   <h2>Editing Book</h2>
+  
+   <% if @book.errors.any? %>
+      <br>
+      <div class="error-message">
+        <%= @book.errors.count %>errors prohibited this book from being saved:
+        <ul>
+          <% @book.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+      <br>
+    <% end %>
+  
   <%= form_with model: @book do |f| %>
 
     <p>Title</p>
