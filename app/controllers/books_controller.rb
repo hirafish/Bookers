@@ -24,6 +24,7 @@ class BooksController < ApplicationController
     book.destroy
     redirect_to "books"
   end
+  
   private
   # ストロングパラメータ
   def book_params
