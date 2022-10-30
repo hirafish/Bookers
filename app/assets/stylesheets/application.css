@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.top_body {
+body {
   margin: 30px 30px 30px 30px;
 }
 
@@ -12,13 +12,6 @@
   margin: 30px 30px 30px 30px;
 }
 
-.index_body {
-  margin: 30px 30px 30px 30px;
-}
-
-.show_body {
-  margin: 30px 30px 30px 30px;
-}
 
 td {
   padding: 5px 10px 0 0;
